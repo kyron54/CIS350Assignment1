@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Kyron Patterson
+ * Assignment: Prototype 1
+ * Description: Allows the Camera to follow the player while moving.
+ * */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

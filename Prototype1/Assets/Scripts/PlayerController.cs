@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Kyron Patterson
+ * Assignment: Prototype 1
+ * Description: Allows the player to move and turn on Input.
+ * */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

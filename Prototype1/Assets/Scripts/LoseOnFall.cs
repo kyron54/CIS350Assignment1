@@ -1,4 +1,10 @@
-﻿using System.Collections;
+﻿/*
+ * Kyron Patterson
+ * Assignment: Prototype 1
+ * Description: Changes the text to indicate losing once the player falls off
+ *  the road.
+ * */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;

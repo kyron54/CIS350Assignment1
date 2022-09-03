@@ -1,8 +1,7 @@
 ﻿/*
  * Kyron Patterson
- * Assignment: Prototype 1
- * Description: Controls the score text and scenes depending on the player's 
- *  status.
+ * Assignment: Challenge 1
+ * Description: Manages the score and the win condition of the player.
  * */
 using System.Collections;
 using System.Collections.Generic;
@@ -30,21 +29,21 @@ public class ScoreManager : MonoBehaviour
     void Update()
     {
         // If the game is not over, display score.
-        if(!gameOver)
+        if (!gameOver)
         {
             textbox.text = "Score: " + score;
         }
 
         //win condition: 3 or more points
-        if (score >= 3)
+        if (score >= 5)
         {
             won = true;
             gameOver = true;
         }
 
-        if(gameOver)
+        if (gameOver)
         {
-            if(won)
+            if (won)
             {
                 textbox.text = "You Win!\nPress 'R' to Play Again!";
             }
@@ -53,7 +52,7 @@ public class ScoreManager : MonoBehaviour
                 textbox.text = "You lose!\nPress 'R' to Try Again!";
             }
 
-            if(Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.R))
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }

@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * Kyron Patterson
+ * Assignment: Prototype 1
+ * Description: Increments score when the player touched a trigger.
+ * */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
