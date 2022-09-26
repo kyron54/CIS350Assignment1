@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * (Kyron Patterson)
+ * (Challenge 3)
+ * (Spawns objects from an array.)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

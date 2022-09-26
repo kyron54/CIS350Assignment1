@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * (Kyron Patterson)
+ * (Challenge 3)
+ * (Repeats the Background when it scrolls halfway.)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

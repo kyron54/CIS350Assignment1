@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * (Kyron Patterson)
+ * (Challenge 3)
+ * (Controls Player Movement, Audio, and replay)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;

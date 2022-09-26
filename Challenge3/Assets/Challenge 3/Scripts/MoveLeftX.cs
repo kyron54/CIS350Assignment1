@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * (Kyron Patterson)
+ * (Challenge 3)
+ * (Simply Moves objects to the Left.)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

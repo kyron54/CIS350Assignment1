@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+ * (Kyron Patterson)
+ * (Challenge 3)
+ * (Manages and updates the UI in the game.)
+ */
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
