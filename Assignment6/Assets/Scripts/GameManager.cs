@@ -2,15 +2,17 @@
 using System.Collections;
 using UnityEngine.SceneManagement;
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     public int score;
     public static GameManager instance;
 
+    public GameObject pauseMenu;
+
     // variable to keep track of what level the game is on.
     private string currentLevelName = string.Empty;
 
-    private void Awake()
+  /*  private void Awake()
     {
         if (instance == null)
         {
@@ -24,7 +26,7 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Trying to instantiate a second instance" +
                 "of singleton Game Manager.");
         }
-    }
+    }*/
     
     // Methods to load and unload scenes
     public void LoadLevel(string levelName)
@@ -46,6 +48,38 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogError("[GameManager] Unable to unload level " + levelName);
             return;
+        }
+    }
+
+    public void UnloadCurrentLevel()
+    {
+        AsyncOperation ao = SceneManager.UnloadSceneAsync(currentLevelName);
+
+        if (ao == null)
+        {
+            Debug.LogError("[GameManager] Unable to unload level " + currentLevelName);
+            return;
+        }
+    }
+
+    // Pausing and unpausing
+    public void Pause()
+    {
+        Time.timeScale = 0f;
+        pauseMenu.SetActive(true);
+    }
+
+    public void Unpause()
+    {
+        Time.timeScale = 1f;
+        pauseMenu.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.P))
+        {
+            Pause();
         }
     }
 
